@@ -3,4 +3,5 @@ abstract class Routes {
   static const HOME = '/home';
   static const PLAYER = '/player';
   static const SONG = '/song';
+  static const PLAYLIST_DETAIL = '/playlist_detail';
 }

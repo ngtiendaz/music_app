@@ -39,6 +39,9 @@ dependencies:
   flutter_dotenv: ^6.0.0
   dio: ^5.9.0
   audioplayers: ^6.4.0
+  just_audio: ^0.9.36 # Thư viện phát nhạc phổ biến nhất
+  audio_session: ^0.1.18 # Quản lý phiên âm thanh
+  marquee: ^2.3.0
 
 dev_dependencies:
   flutter_test:

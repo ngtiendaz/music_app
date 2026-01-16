@@ -4,9 +4,18 @@ import 'package:dio/dio.dart';
 
 class ApiBase {
   static const baseURL = ApisRoot.API_URL;
-    static Dio dio = Dio();
+  static Dio dio = Dio();
 
   //Song APIs
-   static const infoSong = '${baseURL}infosong';
-   static const song = '${baseURL}song';
+  static const infoSong = '${baseURL}infosong';
+  static const song = '${baseURL}song';
+
+  //Home APIs
+  static const home = '${baseURL}home';
+  static const chartHome = '${baseURL}charthome';
+  static const newreleasechart = '${baseURL}newreleasechart';
+  static const top100 = '${baseURL}top100';
+
+  //Playlist APIs
+  static const detailplaylist = '${baseURL}detailplaylist';
 }
