@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:music_app/modules/dashboard/controller/dashboard_controller.dart';
 import 'package:music_app/modules/home/view/home_view.dart';
-import 'package:music_app/modules/song/view/song_view.dart';
 import 'package:music_app/widget/bottom_nav_menu.dart';
 import 'package:music_app/widget/mini_player.dart'; // Import PlayerView full
 
@@ -32,7 +31,6 @@ class DashboardView extends GetView<DashboardController> {
             children: [
               HomeView(),
               Container(color: Colors.black, child: const Center(child: Text("Tab 2", style: TextStyle(color: Colors.white)))), 
-              SongView(),
             ],
           )),
 
@@ -40,7 +38,6 @@ class DashboardView extends GetView<DashboardController> {
           Positioned(
             left: 0,
             right: 0,
-            // --- SỬA Ở ĐÂY: Đẩy MiniPlayer lên trên BottomBar ---
             bottom: bottomBarHeight, 
             child: const MiniPlayerView(),
           ),

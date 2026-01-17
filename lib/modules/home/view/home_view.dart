@@ -58,6 +58,11 @@ class HomeView extends GetView<HomeController> {
                   title: section.title ?? '',
                   playlists: section.playlists ?? [],
                 );
+                  case 'quickPlay':
+                return HomePlaylistSection(
+                  title: section.title ?? '',
+                  playlists: section.playlists ?? [],
+                );
               
               case 'new-release':
                 // TODO: Tạo widget riêng cho New Release (bạn có thể làm tương tự Playlist)

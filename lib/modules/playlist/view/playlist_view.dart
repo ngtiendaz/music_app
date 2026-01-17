@@ -53,7 +53,7 @@ class PlaylistView extends GetView<PlaylistController> {
                 // --- A. AppBar ---
                 SliverAppBar(
                   pinned: true,
-                  expandedHeight: 320.0,
+                  expandedHeight: 300.0,
                   backgroundColor: const Color(0xFF121212),
                   leading: IconButton(
                     icon: const Icon(Icons.arrow_back_ios, color: Colors.white, size: 22),
@@ -138,12 +138,12 @@ class PlaylistView extends GetView<PlaylistController> {
                         ),
                         
                         const SizedBox(height: 12),
-                         Row(
-                           children: [
-                             const Icon(Icons.music_note, color: Colors.green, size: 20),
-                             const SizedBox(width: 8),
-                             const Text("Dành riêng cho bạn", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13)),
-                           ],
+                        const Row(
+                          children: [
+                            Icon(Icons.music_note, color: Colors.green, size: 20),
+                            SizedBox(width: 8),
+                            Text("Dành riêng cho bạn", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13)),
+                          ],
                          ),
                          
                         const SizedBox(height: 8),

@@ -55,10 +55,7 @@ class PlayerView extends GetView<PlayerController> {
                           Expanded(
                             child: Column(
                               children: [
-                                Text(
-                                  "Đang phát từ danh sách",
-                                  style: TextStyle(color: Colors.grey[400], fontSize: 12),
-                                ),
+                                
                                 Text(
                                   song.album?.title ?? "Bài hát gợi ý",
                                   style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
@@ -83,6 +80,7 @@ class PlayerView extends GetView<PlayerController> {
                       height: 400,
                       decoration: BoxDecoration(
                         shape: BoxShape.rectangle,
+                        borderRadius: BorderRadius.circular(8),
                         image: DecorationImage(
                           image: NetworkImage(song.thumbnailM ?? ''),
                           fit: BoxFit.cover,
@@ -130,11 +128,7 @@ class PlayerView extends GetView<PlayerController> {
                             ),
                           ),
                           IconButton(
-                            icon: const Icon(Icons.favorite_border, color: Colors.white),
-                            onPressed: () {},
-                          ),
-                          IconButton(
-                            icon: const Icon(Icons.add_circle_outline, color: Colors.white),
+                            icon: const Icon(Icons.add_circle_outline, color: Colors.white, size: 40),
                             onPressed: () {},
                           ),
                         ],
@@ -230,14 +224,14 @@ class PlayerView extends GetView<PlayerController> {
 
                     // Bottom Actions
                     const SizedBox(height: 20),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    const Padding(
+                      padding:  EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                           const Icon(Icons.speaker_group_outlined, color: Colors.white),
-                           const Icon(Icons.share_outlined, color: Colors.white),
-                           const Icon(Icons.playlist_play, color: Colors.white),
+                            Icon(Icons.speaker_group_outlined, color: Colors.white),
+                            Icon(Icons.share_outlined, color: Colors.white),
+                           Icon(Icons.playlist_play, color: Colors.white),
                         ],
                       ),
                     ),
