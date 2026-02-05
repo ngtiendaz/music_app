@@ -18,4 +18,10 @@ class ApiBase {
 
   //Playlist APIs
   static const detailplaylist = '${baseURL}detailplaylist';
+
+  // Search Song APIs
+  static const search = '${baseURL}search';
+
+  // Lyric APIs
+  static const lyric = '${baseURL}lyric';
 }
